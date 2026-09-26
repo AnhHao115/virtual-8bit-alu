@@ -37,8 +37,9 @@ The project utilizes pure ANSI C with explicit type widths (`stdint.h`):
    | Result -> |         |  Status   |
    |   RegA    |         | (Z / C)   |
    +-----------+         +-----------+
+```
 
-4. Verification & Testbench
+## 4. Verification & Testbench
 A built-in test suite verifies boundary cases:
 
 Normal Addition: 15 + 10 = 25 (RegA = 0x19, C=0, Z=0).
@@ -47,13 +48,14 @@ Carry / Overflow: 200 + 100 = 300 = 44 mod 256 (RegA = 0x2C, C=1, Z=0).
 
 Bitwise AND Zero Flag: 0b10100000 AND 0b01010000 = 0 (RegA = 0x00, C=0, Z=1).
 
-Build & Run
-Bash
+### Build & Run
+```Bash
 # Compilation
 gcc main.c -o alu_sim
 
 # Execution
 ./alu_sim
+```
 
 5. What I Learned & Key Takeaways
 Hardware Thinking in C: Mapping abstract programming constructs directly to hardware concepts (registers, buses, flags).
