@@ -57,14 +57,14 @@ gcc main.c -o alu_sim
 ./alu_sim
 ```
 
-5. What I Learned & Key Takeaways
+## 5. What I Learned & Key Takeaways
 Hardware Thinking in C: Mapping abstract programming constructs directly to hardware concepts (registers, buses, flags).
 
 Bitwise Manipulation: Precision masking using bitwise OR (|=), AND-NOT (&= ~), and bit shifts (<<).
 
 Timing & Sequential Logic Preparation: Established baseline intuition for implementing full-adder datapath and register transfer logic in Verilog/SystemVerilog.
 
-6. Possible Future Improvements
+## 6. Possible Future Improvements
 Implement signed arithmetic with Overflow Flag (V) using Two's Complement.
 
 Add Subtract (SUB), Shift Left/Right (SHL/SHR), and Bitwise XOR (XOR) instructions.
